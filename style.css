@@ -87,6 +87,7 @@
 .button:hover {
     background: rgb(230, 89, 195);
     transition: all 0.3s ease;
+    color: white;
 }
 
 .navbar__links:hover {
@@ -148,9 +149,9 @@
 
     #mobile-menu {
         position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
+        top: 10%;
+        right: 8%;
+        transform: translate(10%, 8%);
     }
 
     .navbar__btn {
@@ -177,15 +178,27 @@
     }
 
     #mobile-menu.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(225deg);
     }
 
     #mobile-menu.is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-225deg);
     }
 }
 
 /* Hero Section CSS */
+
+a {
+    text-decoration: none;
+    color: #da80e4; 
+}
+
+a:hover {
+    color:rgb(230, 89, 195);
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
 .main {
     background-color: #e6e6e6;
 }
@@ -221,7 +234,7 @@
 
 .main__btn {
     font-size: 1rem;
-    background-color: #da80e4;
+    background: #da80e4;
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -240,23 +253,13 @@
     text-decoration: none;
 }
 
-.main__btn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #a73131;
-    transition: all 0.35s;
-    border-radius: 4px;
-}
-
 .main__btn:hover {
+    background: #d540e6;
+    transition: all 0.35s;
     color: white;
 }
 
-.main_btn:hover::after {
+.main_btn:hover:after {
     width: 100%;
 }
 
@@ -321,3 +324,29 @@
         margin: 2.5rem 0
     }
 }
+
+
+/* .socials__menu {
+    position: fixed;
+    bottom: 12%;
+    left: 5%;
+    width: 50px;
+    height: 12%;
+    background: transparent;
+    font-size: 25px;
+}
+
+.socials__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #131313;
+    transition: background 0.3s;
+}
+
+.socials__link i {
+    font-size: 2.2rem;
+} */
